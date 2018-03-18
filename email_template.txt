@@ -1,0 +1,9 @@
+Hi there,
+
+The following games are free right now:
+{games}
+
+https://www.humblebundle.com/store/search?sort=discount&filter=onsale
+
+Kind regards,
+Be Humble
