@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from config import recipients
 from send_mail import send_mail
 from humblebundle import get_free_game_names
