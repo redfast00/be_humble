@@ -18,7 +18,7 @@ async def humble_background_task():
         # Check if there are free games right now and if we haven't seen them
         if free_games and not free_games.issubset(already_seen):
             print("Sending message...")
-            message = '@Gamers FREE right now: {} https://humblebundle.com/store/search?sort=discount'.format(' + '.join(free_games))
+            message = '<@&461088717101334539> FREE right now: {} https://humblebundle.com/store/search?sort=discount'.format(' + '.join(free_games))
             await client.send_message(channel, message)
             already_seen.update(free_games)
         await asyncio.sleep(TIMEOUT)
