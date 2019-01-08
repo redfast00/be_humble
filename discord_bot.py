@@ -14,7 +14,7 @@ async def humble_background_task():
     already_seen = set()
     while not client.is_closed:
         print("checking new games")
-        free_games = set(get_free_game_names()) - set("Caffeine")
+        free_games = set(get_free_game_names()) - {"Caffeine"}
         # Check if there are free games right now and if we haven't seen them
         if free_games and not free_games.issubset(already_seen):
             print("Sending message...")
